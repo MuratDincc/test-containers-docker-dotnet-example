@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  customer.api:
+      container_name: customer-api-container
+      restart: always
+      build:
+        context: .
+        dockerfile: src/Customer.Api/Dockerfile
+      environment:
+        - ASPNETCORE_ENVIRONMENT=Production
+        - ASPNETCORE_URLS=http://+:80
+      ports:
+        - "5000:80"
+
+  customer-mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: customer-mssql
+    volumes:
+        - ./.containers/database:/var/opt/mssql/data
+    ports:
+        - "1433:1433"
+    environment:
+        ACCEPT_EULA: "Y"
+        SA_PASSWORD: "MuratDinc2023!!"

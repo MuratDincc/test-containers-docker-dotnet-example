@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{83522ADE-CC90-4C83-9EA8-06A7B0919AD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E0A13F43-B908-405F-B3E9-52F1A9F0AE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.Api.Tests", "Customer.Api.Tests\Customer.Api.Tests.csproj", "{C1DC79D8-0640-4F05-9DFC-4257550C6298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.Api", "Customer.Api\Customer.Api.csproj", "{C3F75604-1E49-4E68-9E26-FE9EAB7D2C2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC8E8CCE-5A1C-47AE-ACFD-9A7BE3A214EB}"
+	ProjectSection(SolutionItems) = preProject
+		..\docker-compose.yml = ..\docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1DC79D8-0640-4F05-9DFC-4257550C6298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1DC79D8-0640-4F05-9DFC-4257550C6298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1DC79D8-0640-4F05-9DFC-4257550C6298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1DC79D8-0640-4F05-9DFC-4257550C6298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F75604-1E49-4E68-9E26-FE9EAB7D2C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F75604-1E49-4E68-9E26-FE9EAB7D2C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F75604-1E49-4E68-9E26-FE9EAB7D2C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F75604-1E49-4E68-9E26-FE9EAB7D2C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1DC79D8-0640-4F05-9DFC-4257550C6298} = {E0A13F43-B908-405F-B3E9-52F1A9F0AE13}
+		{C3F75604-1E49-4E68-9E26-FE9EAB7D2C2C} = {83522ADE-CC90-4C83-9EA8-06A7B0919AD4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD7E1A7F-B459-45B7-ADB9-52D5AE50C41B}
+	EndGlobalSection
+EndGlobal
